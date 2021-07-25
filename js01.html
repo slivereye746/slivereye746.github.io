@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chương 4 - Bài tập 1</title>
+        <script>
+            function fction(){
+                var d = new Date();
+                var y = d.getFullYear();
+                var name = document.getElementById("name").value;
+                var result = document.getElementById("sayHello");
+                var age = document.getElementById("bYear").value;
+                if (name == ""){
+                    result.innerHTML = "Vui lòng nhập tên!";
+                } else if (age==""){
+                    result.innerHTML = "Vui lòng nhập số tuổi!";
+                } else if (age>=y){
+                    result.innerHTML = "Số tuổi không hợp lệ!"
+                } else {
+                    result.innerHTML = "Chào bạn " + name + "!<br>Tuổi của bạn là " + (y - age);
+                }
+            }
+        </script>
+    </head>
+    <body style="background-color: rgb(255, 220, 174);">
+        <table  style="background-color: white;" border="1px">
+            <tr>
+                <td>Nhập vào tên bạn:</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Nhập vào năm sinh:</td>
+                <td><input type="number" id="bYear"></td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="fction()">Tính tuổi</button><br>
+        <p id="sayHello"></p>
+        <footer style="text-align: center; margin-top: 20px;"><a href="/javascript.html">Quay lại!</a></footer>
+    </body>
+</html>
