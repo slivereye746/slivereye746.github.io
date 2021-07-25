@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chương 4 - Bài tập 7</title>
+        <script src="JS/js07.js"></script>
+        <link href="/css/js07.css" rel="stylesheet">
+    </head>
+    <body onload="ftnCreate()"> 
+        <form>
+            <div style="display: flex;justify-content: center;">
+                <table>  
+                    <tr>
+                        <td colspan="2" style="font-size: 16px; text-align: center; font-weight: bold;">ĐĂNG KÝ MUA HÀNG</td>
+                    </tr>
+                    <tr>
+                        <td>Họ:</td>
+                        <td id="leftcol"><input id="name" type="text" required><span class="validity"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Tên:</td>
+                        <td><input type="text" id="pass" required><span class="validity"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" id="pass" required><span class="validity"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Số Điện Thoại:</td>
+                        <td><input type="number" id="pass" required><span class="validity"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Số Lượng Mua:</td>
+                        <td><input type="number" id="pass" required><span class="validity"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Ngày Nhận Hàng:</td>
+                        <td><input type="date" data-date-format="dd mm yyyy" id="bday"  required><span class="validity"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Thanh Toán:</td>
+                        <td><input type="radio" name="sex" id="nam" required>Chuyển Khoản<input type="radio" id="nu" name="sex">Trực Tiếp Khi Mua Hàng</td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Đăng Ký Mua</button></td>
+                        <td><button type="reset">Xóa</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+        <footer style="text-align: center; margin-top: 20px;"><a href="/javascript.html">Quay lại!</a></footer>
+    </body>
+</html>
