@@ -1,0 +1,14 @@
+.grayBorder{
+    border:solid #CCCCCC;
+    padding:5px;
+}
+.solidBorder{
+    border: solid black;
+    background-color: #CCCCCC;
+    padding: 1px;
+}
+.reddotBorder{
+    border: dotted red;
+    background-color: #CCCCCC;
+    padding: 1px;
+}

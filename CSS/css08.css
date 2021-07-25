@@ -1,0 +1,17 @@
+div{
+    margin: 30px;
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 5px;
+}
+.div2{
+    float: left;
+    overflow: hidden;
+    line-height: 20px;
+}
+.div3{
+    overflow: scroll;
+    float: left;
+}

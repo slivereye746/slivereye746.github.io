@@ -1,0 +1,12 @@
+.container{
+    position: relative;
+}
+.bgc{
+    height: 130px; width: 560px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+}
