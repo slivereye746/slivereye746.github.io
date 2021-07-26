@@ -2,14 +2,44 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Chương 2 - Bài tập 12</title>
+        <title>Chương 2 - Bài tập 17</title>
     </head>
     <body>
-        <img src="/Images/vnmap.jpg" usemap="#vnmap">
-        <map name="vnmap">
-            <area shape="circle" coords="217,141,14" href="http://hanoi.vietnamplus.vn/Home/abouthanoi.vnplus">
-            <area shape="poly" coords="283,413,295,409,300,400,348,432,339,433,330,432,328,438,318,443,306,442,303,438,299,440,287,432,286,427,282,424,286,417" href="https://thuathienhue.gov.vn/vi-vn/">
-            <area shape="rect" coords="242,731,280,770" href="http://www.hochiminhcity.gov.vn/Pages/default.aspx">
-        </map>
+        <form>
+            <table border="1" style="background-color: deepskyblue;">
+                <tr>
+                    <td>Họ tên:</td>
+                    <td><input type="text" placeholder="Nhập họ tên ở đây!"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính:</td>
+                    <td><input type="radio" name="sex" value="male" checked>Nam<input type="radio" name="sex" value="female">Nữ</td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh:</td>
+                    <td><input type="date" name="birthday" value="dd/mm/yyyy" ></td>
+                </tr>
+                <tr>
+                    <td>Điều bạn quan tâm</td>
+                    <td><input type="checkbox">Kinh tế<input type="checkbox">Xã hội<input type="checkbox">Giải trí</td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td><textarea rows="5" cols="60"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Học vấn:</td>
+                    <td><select>
+                        <option value="daihoc">Đại học</option>
+                        <option value="caodang">Cao đẳng</option>
+                        <option value="trungcap">Trung cấp</option>
+                        <option value="thpt">THPT</option>
+                    </select></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2"><button type="submit">Gửi thông tin</button> <button type="reset">Nhập lại</button></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
