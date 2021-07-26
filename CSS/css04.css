@@ -1,16 +1,14 @@
-a:link{
-    color: green;
-    text-decoration: none;
+.grayBorder{
+    border:solid #CCCCCC;
+    padding:5px;
 }
-a:visited{
-    color: blue;
-    text-decoration: none;
+.solidBorder{
+    border: solid black;
+    background-color: #CCCCCC;
+    padding: 1px;
 }
-a:hover{
-    color: red;
-    text-decoration: underline;
-}
-a:active{
-    color: yellow;
-    text-decoration: underline;
+.reddotBorder{
+    border: dotted red;
+    background-color: #CCCCCC;
+    padding: 1px;
 }
