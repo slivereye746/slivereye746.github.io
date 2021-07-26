@@ -3,6 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>Ứng dụng web</title>
+        <style>
+            body {
+                background-color: rgb(255, 220, 174);
+            }
+            a {
+                text-decoration: none;
+            }
+            a:visited {
+                color:cornflowerblue;
+            }
+            a:hover {
+                color: rgb(207, 104, 104);
+            }
+            div {
+                padding: 1em;
+            }
+            img {
+                transition: 0.3s;
+            }
+            img:hover {
+                left: 1em;
+                width: 130px;
+                height: 190px;
+            }
+        </style>
     </head>
     <body>
         <h2 style="text-align: center;">Danh mục sách</h2>
@@ -13,15 +38,15 @@
             </div>
             <div style="display: inline-block;">
                 <h3><a href="css.html">CSS</a></h3>
-                <a href="css.html"><img src="Images/css.jpg" width="120px" height="180px"></a>              
+                <a class="img" href="css.html"><img src="Images/css.jpg" width="120px" height="180px"></a>              
             </div>
             <div style="display: inline-block;">
                 <h3><a href="javascript.html">Javascript</a></h3>
-                <a href="javascript.html"><img src="Images/javascript.jpg" width="120px" height="180px"></a>
+                <a class="img" href="javascript.html"><img src="Images/javascript.jpg" width="120px" height="180px"></a>
             </div>
             <div style="display: inline-block;">
                 <h3><a href="jquery.html">jQuery</a></h3>
-                <a href="jquery.html"><img src="Images/jQuery.jpg" width="120px" height="180px"></a>         
+                <a class="img" href="jquery.html"><img src="Images/jQuery.jpg" width="120px" height="180px"></a>         
             </div>
         </div>
     </body>
