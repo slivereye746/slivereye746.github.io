@@ -5,42 +5,50 @@
         <title>Chương 4 - Bài tập 3</title>
         <script src="JS/js03.js"></script>
         <style>
+            table{
+                border: black 2px solid;
+                border-collapse: collapse;
+                background-color: rgb(240, 174, 33);
+            }
+            td{
+                border: black 1px solid;
+                border-collapse: collapse;
+            }
             .left{
-                width: 30%;
+                width: 40%;
+            }
+            #a{
+                margin-right: 70px;
             }
         </style>
     </head>
     <body style="background-color: rgb(255, 220, 174);"> 
-        <div style="display: flex;justify-content: center;">
-            <table style="background-color:white;" border="1px solid">
-                <tr><td colspan="2" align="center" class="left"><b>CÁC PHÉP TÍNH SỐ HỌC</b></td></tr>
-                <tr>
-                    <td class="left">Số thứ 1</td>
-                    <td><input type="number" id="num1"></td>
-                </tr>
-                <tr>
-                    <td>Số thứ 2</td>
-                    <td><input type="number" id="num2"></td>
-                </tr>
-                <tr>
-                    <td>Chọn phép toán</td>
-                    <td><form>
-                        <input type="radio" name="pheptinh" value="cong" checked id="cong">
-                        <label>Cộng</label><br>
-                        <input type="radio" name="pheptinh" value="tru" id="tru">
-                        <label>Trừ</label><br>
-                        <input type="radio" name="pheptinh" value="nhan" id="nhan">
-                        <label>Nhân</label><br>
-                        <input type="radio" name="pheptinh" value="chia" id="chia">
-                        <label>Chia</label><br></form>
-                    </td>
-                </tr>
-                <tr>
-                    <td><button onclick="pheptinh()">Thực hiện</button></td>
-                    <td><p id="result"></p></td>
-                </tr>
-            </table> 
-        </div>
+        <table>
+            <caption>
+                <h3>CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH BẬC 2</h3>
+                <b>ax<sup>2</sup>+bx+c=0</b></caption>
+            <tr>
+                <td class="left">a =</td>
+                <td><input type="number" id="a"></td>
+            </tr>
+            <tr>
+                <td>b =</td>
+                <td><input type="number" id="b"></td>
+            </tr>
+            <tr>
+                <td>c =</td>
+                <td><input type="number" id="c"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button style="margin: 2px;" onclick="math()">Giải</button><button onclick="document.getElementById('a').value = '';
+                                                                        document.getElementById('b').value = '';
+                                                                        document.getElementById('c').value = '';
+                                                                        document.getElementById('result').textContent = '';">Xóa</button></td>
+        </tr>
+        </table>
+        <br>
+        <p id="result" style="font-weight: bold;"></p>
         <footer style="text-align: center; margin-top: 20px;"><a href="/javascript.html">Quay lại!</a></footer>
     </body>
 </html>

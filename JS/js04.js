@@ -1,9 +1,42 @@
-var x = setInterval(function() {
-    var str = document.getElementById("result").innerText;
-        var l = str.length;
+function pheptinh(){
+    var x = document.getElementById("num1").value;
+    var y = document.getElementById("num2").value;
+    var result = document.getElementById("result");
+    var rs;
 
-        var x = str[0];
-        var y = str.slice(1,l);
-        var index = y + x;
-        document.getElementById("result").innerHTML = index;
-}, 1000);
+    const rbs = document.querySelectorAll('input[name="pheptinh"]');
+    let selectedValue;
+    for (const rb of rbs) {
+        if (rb.checked) {
+            selectedValue = rb.value;
+            break;
+        }
+    }              
+    if (x==''||y=='')
+    {
+        result.innerHTML = "Vui lòng nhập số!";
+    } else{
+        switch (selectedValue){
+            case "cong":
+                rs = Number(x)+ Number(y);
+                result.innerHTML = rs;
+                break;
+            case "tru":
+                rs = x - y;
+                result.innerHTML = rs;
+                break;
+            case "nhan":
+                rs = x * y;
+                result.innerHTML = rs;
+                break;
+            case "chia":
+                if (y == 0){
+                    result.innerHTML = "Mẫu số phải khác 0!";
+                } else {
+                    rs = x / y;
+                    result.innerHTML = rs;
+                }
+                break;
+        }
+    }
+}
