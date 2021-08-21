@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chương 4 - Bài tập 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="background-color: rgb(255, 220, 174);">
+        <p id="name"></p>
+        <p id="day"></p>
+        <footer style="text-align: center; margin-top: 20px;"><a href="/javascript.html">Quay lại!</a></footer>
+        <script>
+            var x = prompt("Tên:", "Vị Vua vĩ đại của những hành tinh xa xôi!");
+            if (x!= null) {
+                let date =  new Date().getFullYear();
+                do{
+                    var y = parseInt(prompt("Năm Sinh:", ""));
+                } while( isNaN(y)|| y > date || y < 0);
+                document.getElementById("name").innerHTML = "Tên: <b>" + x.toString() +"</b>";
+                document.getElementById("day").innerHTML = "Năm sinh: <b>" + y.toString() + "</b>"; 
+            }
+            else {
+                document.getElementById("name").innerHTML = "Tên: <b>" + "Vị Vua vĩ đại của những hành tinh xa xôi!" +"</b>";
+                document.getElementById("day").innerHTML = "Năm sinh: <b>Vũ trụ năm thứ 4023124359587234545</b>";
+            }
+        </script>
+    </body>
+</html>
