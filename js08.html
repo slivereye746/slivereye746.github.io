@@ -3,11 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>Chương 4 - Bài tập 8</title>
+        <script src="/js08.html"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .mid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            button {
+                padding: 10px;
+            }
+        </style>
     </head>
     <body style="background-color: rgb(255, 220, 174);">
-        <p>Nhập số phần tử: </p>
-        <input type="number" id="input">
+        <div class="mid">
+            <br>
+            <div>
+                <label>Nhập số phần tử: </label>
+                <input type="number" id="input">
+            </div>
+            <br>
+            <div>
+                <button type="button" onclick="Add()">Tạo mảng</button>
+                <button>Sắp xếp mảng tăng</button>
+                <button>Sắp xếp mảng giảm</button>
+            </div>
+           <div>
+               <p id="rs"></p>
+           </div>
+        </div>
         <footer style="text-align: center; margin-top: 20px;"><a href="/javascript.html">Quay lại!</a></footer>
     </body>
 </html>
