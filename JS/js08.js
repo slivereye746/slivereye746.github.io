@@ -1,10 +1,12 @@
+
+
 function Add() {
     //document.getElementById("rs").value = "";
+    var n = document.getElementById("input").value;
     if (document.getElementById("input").value == "") {
         document.getElementById("rs").innerHTML = "Vui lòng nhập số phần tử mảng!";
     }
     else {
-        var n = document.getElementById("input").value;
         arr = new Array(n);
         document.getElementById("rs").innerHTML = "Mảng ban đầu: ";
         for (let i = 0; i < n; i++) {
@@ -17,11 +19,16 @@ function Add() {
 }
 
 function SapXep1() {
-    arr.sort();
-    var str  = "Mảng tăng dần: ";
-    for (let i = 0; i < n; i++) {
-        str += ' &nbsp ' + arr[i];
+    var n = document.getElementById("input").value;
+    if (document.getElementById("input").value < 2) {
+        document.getElementById("sx1").innerHTML = "Mảng phải có hơn 2 phần tử!";
     }
-    document.getElementById("sx1").innerHTML = str.toString();
+    else {
+        document.getElementById("sx1").innerHTML = "Mảng tăng dần: ";
+        arr.sort();
+        for (let i = 0; i < n; i++) {
+            document.getElementById("sx1").innerHTML += ' &nbsp ' + arr[i];
+        }
+    }
 }
 
