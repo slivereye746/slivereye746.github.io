@@ -18,9 +18,10 @@ function Add() {
 
 function SapXep1() {
     arr.sort();
-    document.getElementById("sx1").innerHTML = "Mảng tăng dần: ";
+    var str  = "Mảng tăng dần: ";
     for (let i = 0; i < n; i++) {
-        document.getElementById("sx1").innerHTML += ' &nbsp ' + arr[i];
+        str += ' &nbsp ' + arr[i];
     }
+    document.getElementById("sx1").innerHTML = str.toString();
 }
 
