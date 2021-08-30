@@ -25,10 +25,22 @@ function SapXep1() {
     }
     else {
         document.getElementById("sx1").innerHTML = "Mảng tăng dần: ";
-        arr.sort();
+        arr.sort(function(a,b){return a-b});
         for (let i = 0; i < n; i++) {
             document.getElementById("sx1").innerHTML += ' &nbsp ' + arr[i];
         }
     }
 }
-
+function SapXep2() {
+    var n = document.getElementById("input").value;
+    if (document.getElementById("input").value < 2) {
+        document.getElementById("sx2").innerHTML = "Mảng phải có hơn 2 phần tử!";
+    }
+    else {
+        document.getElementById("sx2").innerHTML = "Mảng giảm dần: ";
+        arr.sort(function(a,b){return b-a});
+        for (let i = 0; i < n; i++) {
+            document.getElementById("sx2").innerHTML += ' &nbsp ' + arr[i];
+        }
+    }
+}
