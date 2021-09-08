@@ -1,6 +1,7 @@
-functionAdd1() {
+function Add1() {
+    var str1 = document.getElementById("input").value;
     
 }
-functionAdd2() {
+function Add2() {
     
 }
