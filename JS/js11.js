@@ -11,13 +11,11 @@ function Add(){
         document.getElementById("rs").innerHTML = "Character: "+ leng.toString() + "<br>" 
                                                 + "Words: " + arr.length + "<br>";
         //
-        var countA = str.length() - string.replaceAll("g","").length();
+        var countA = str.length() - string.replaceAll("A","").length();
         if (countA > 0) {
             document.getElementById("rs").innerHTML += "Character 'A': " + countA.toString();
         }
-        const stringArr = split
         const lietke = []; 
-        
 
         
     }
