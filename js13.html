@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chương 4 - Bài tập 13</title>
+        <script src="/JS/js13.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .mid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .content {
+                position: relative;
+                float: left;
+            }
+            .input1 {
+                width: 300px;
+                
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(255, 220, 174);">
+        <div class="mid">
+            <br>
+            <p id="text" style="color: #ff0000; font-size: 40px;"> Thay đổi Style</p>
+            <br>
+            <div>
+                <div class="content">
+                    <label>Nhập nội dung: </label>        
+                    <input type="text" class="input1" id="input">
+                    <br><br>
+                    <label>Màu nền: </label>        
+                    <input type="color" id="bg" value="#000000">
+                    <br><br>
+                    <label>Màu chữ: </label>        
+                    <input type="color" id="txt" value="#ffa200">
+                    <br><br>
+                    <button type="button" onclick="Add()">Thực hiện</button>
+                </div>
+            </div>
+            
+            <br>
+        </div>
+        <footer style="text-align: center; margin-top: 20px;"><a href="/javascript.html">Quay lại!</a></footer>
+    </body>
+</html>

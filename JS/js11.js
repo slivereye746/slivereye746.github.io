@@ -11,13 +11,14 @@ function Add(){
         document.getElementById("rs").innerHTML = "Character: "+ leng.toString() + "<br>" 
                                                 + "Words: " + arr.length + "<br>";
         //
-        var countA = str.length() - string.replaceAll("A","").length();
-        if (countA > 0) {
-            document.getElementById("rs").innerHTML += "Character 'A': " + countA.toString();
+        for (let i = 33; i < 127; i++) {
+            let item = String.fromCharCode(i);
+            let count = str2.length - str2.replace(item,'').length;
+            if (count > 0) {
+                document.getElementById("rs").innerHTML += "Character '"+ item + "': " + count.toString() + "<br>";
+            }
+            
         }
-        const lietke = []; 
-
-        
     }
     else {
         document.getElementById("rs").innerHTML = "Vui lòng nhập chuỗi!";

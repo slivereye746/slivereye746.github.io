@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chương 4 - Bài tập 12</title>
+        <script src="/JS/js12.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .mid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .content {
+                position: relative;
+                float: left;
+            }
+            .input1 {
+                width: 300px;
+                
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(255, 220, 174);">
+        <div class="mid">
+            <br>
+            <div id="show" style="width: 600px; height: 350px; background-color: #000000; text-align: center; border-radius: 8px;">
+                <p id="text" style="color: #ffa200; font-size: 40px;">WELCOME HTML5</p>
+            </div>
+            <br>
+            <div>
+                <div class="content">
+                    <label>Nhập nội dung: </label>        
+                    <input type="text" class="input1" id="input">
+                    <br><br>
+                    <label>Màu nền: </label>        
+                    <input type="color" id="bg" value="#000000">
+                    <br><br>
+                    <label>Màu chữ: </label>        
+                    <input type="color" id="txt" value="#ffa200">
+                    <br><br>
+                    <button type="button" onclick="Add()">Thực hiện</button>
+                </div>
+            </div>
+            
+            <br>
+        </div>
+        <footer style="text-align: center; margin-top: 20px;"><a href="/javascript.html">Quay lại!</a></footer>
+    </body>
+</html>
